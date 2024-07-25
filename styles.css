@@ -3,30 +3,73 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'source code pro';
-    font-size:medium;
+    font-size:large;
     color: #000000;
   }
 
-  .menu-container {
-    background-color: #ffffff;
-    padding: 20px 0;
+  .menu-container{
     display: flex;
-    flex-direction: column;
-    flex-wrap: no-wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
+    background-color: #ffffff;
+    width: 400px;
   }
-  
-  .menu {
-    font-size: small;
+
+  .svg {
+    width: 15px;
+    height: 15px;
   }
 
   .home-container, 
   .about-container {
     display: flex;
     flex-wrap: wrap;
-    width: 900px;
+    width: 1000px;
     margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid #000000;
+  }
 
+  .home-container-two{
+    flex-direction: column;
+    position: relative;
+    bottom: 150px;
+    right: 250px;
+    width: 500px;
+    align-items:  flex-start;
+  }
+  .home-container-three{
+    position: relative;
+    bottom: 80px;
+  }
+
+  .home-item-two {
+    position: relative;
+  }
+
+  .home-item-four{
+    position: relative;
+    top: 8px;
+    left: 10px;
+  }
+
+  .home-item-six{
+    position: relative;
+    top: 8px;
+    left: 37px;
+  }
+
+  .home-item-five{
+    position: relative;
+    left: 30px;
+  }
+
+
+  .home-footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 0 auto;
   }
   
   .home, .about {
@@ -38,50 +81,39 @@
   .about, .home {
     font-size: larger;
   }
-  
-  .project-grid-container {
-    width: 900px;
-    margin: 0 auto;
-  }
 
-  .project-grid {
-    overflow: hidden;
-    background-color: #EAEDF0;
-  }
   .home-item,
   .about-item {
     margin:auto;
     padding-top: 2%;
-    flex:1.5
-  }
-  .project-grid-item {
-
   }
 
-  .column {
+  .project-grid-container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .project-grid {
+    overflow: hidden;
+    background-color: #EAEDF0;
+  }
+  .project {
     float: left;
-    width: 37%;
-    margin: 20px 1.15%;
-    height: 420px;
-    background-color: #B2D6FF;    /* Medium blue */
+    width: 47.5%;
+    margin: 20px 1%;
+    background-color: #d4dbe1;
     padding:20px;
   }
-
-
   .article-image {
   float: left;
   width: 300px;
-  height: 200px;
   margin-right: 20px;
   margin-bottom: 20px;
 }
-
   .launch {
-    width: 250px;
-    height: 500px;
+    width: 205px;
 }
-
-p {
+p, .p {
+  font-size: small;
   margin-bottom: 20px;
 }
 
