@@ -11,9 +11,9 @@
     <body>
       <header class='menu-container'>
         <nav class='menu'>
-          <div class='home'><a href='index.html'>Home</a></div>
-          <div class='about'><a href='about-me.html'>About Me</a></div>
-          <div class='projects'><a href='projects.html'>Projects</a></div>
+          <div class='menu-item one'><address><a href='mailto:emsalmengus@gmail.com'>emsalmengus@gmail.com</a></address></div>
+          <div class='menu-item two'><img src='images/phone.png'/></div>
+          <div class='menu-item three'><p>015781719934</p></div>
         </nav>
       </header>
       <section class='home-container'>
@@ -26,24 +26,25 @@
         <div class='home-item'>
             <p> a software tester living in Cologne, Germany with experience in software development and automation.</p>
         </div>
-          <div class='home-item'>
-            <img src='images/foto.jpg'>
-          </div>
+
+        <div class='home-footer-item'>
+          <img src='images/map.png'>
+        </div>
+        <div class='home-footer-item'>
+          <p>Cologne, Germany</p>
+        </div>          
+        <div class='home-footer-item'>
+          <img src='images/map.png'>
+        </div>
+        <div class='home-footer-item'>
+          <p>Available for new projects</p>
+        </div>
+
+        <div class='home-item'>
+          <img src='images/foto.jpg'>
+        </div>
 
           <footer class='home-footer'>
-
-            <div class='home-footer-item'>
-              <img src='images/map.png'>
-            </div>
-            <div class='home-footer-item'>
-              <p>Cologne, Germany</p>
-            </div>          
-            <div class='home-footer-item'>
-              <img src='images/map.png'>
-            </div>
-            <div class='home-footer-item'>
-              <p>Available for new projects</p>
-            </div>
 
         </footer>
 
@@ -59,11 +60,12 @@
             <div class='about-item'>
               <h1>About Me</h1>
               <p>Currently, I'm a Test Automation Engineer
-                at REWE digital, where I'm working on developing an Xray connector for test automation.</p>
+                at REWE digital, where I'm working on developing an Xray connector for test automation for ReadyAPI, Java and Cypress.</p>
               <ul>
                 <p>Software testing and programming</p>
+                <p>Bachelor of Science in Economics and Code & Context</p>
                 <p>Certified Software Tester (ISTQB) with 5 years of experience</p>
-                <p>2 years testing experience at the Humboldt Foundation with Java</p>
+                <p>2 years testing experience at the Alexander-von-Humboldt Foundation with Java</p>
                 <p>2 years of on-site/ client location testing experience with SAP S/4HANA</p>
                 <p>Excellent problem solving and communication skills, committed and hard working</p>
               </ul>
@@ -90,75 +92,44 @@
         </section>
 
 
-        <div class='project-grid-container one'>
-          <div class='project-grid'>
-  
-            
-            <div class='project-grid-item'>
-  
-  
-            <div class='project-grid-item'>
-              <article>
-                <h1>Project Launch</h1>
-                <p>Together with students from KISD and the inclusion expert Un-Label e.V., we have developed an initial partial solution for people with the disabilities of understanding and moving.
-                  The prototype, which was developed as part of an iterative process, presents accessible offers for people with Down syndrome and people in wheelchairs in a comprehensible way.</p>
-                <!-- ... -->
-                <img src='images/launch1.png'>
-              </article>
-            </div>
-  
-  
-            <div class='project-grid-item'>
-              <article>
-                <h1>Open Design</h1>
-                <p>In this project
-                  <!-- ... <object data="images/Kintsugi.pdf" width="500" height="200"></object>-->
-                  under the theme "Hyperlinked Originals", I connected a Samsung PL210 digital camera by cable to an EPSON XP 7100 printer. I have simulated that a photo of an object is taken by the digital camera. The LCD display of the camera is damaged, which becomes clear by the cracks in the display. Firstly, a flash fires visualizing the photo shooting process. In the end, the photo is printed by the printer. When taking a closer look at the printed photo, one can see the cracks in the display were also printed on the photo.</p>
-                <video width="320" height="240" controls>
-                  <source src="videos/kintsugi.mp4" type="video/mp4">
-                </video>
-                
-              </article>
-            </div>
+      <section class='container'>
+        <div class='footer'>
+
+          <article class='column'>
+            <img class='article-image' id='launch' src='images/launch1.png'>
+            <h1>Project Launch</h1>
+            <p>Together with students from KISD and the inclusion expert Un-Label e.V., we have developed an initial partial solution for people with the disabilities of understanding and moving.
+              The prototype, which was developed as part of an iterative process, presents accessible offers for people with Down syndrome and people in wheelchairs in a comprehensible way.</p>
+            </article>
+
+          <article class='column'>
+            <video class='article-image' width="320" height="240" controls>
+              <source src="videos/kintsugi.mp4" type="video/mp4">
+            </video>
+            <h1>Open Design</h1>
+            <p>In this project
+              <!-- ... <object data="images/Kintsugi.pdf" width="500" height="200"></object>-->
+              under the theme "Hyperlinked Originals", I connected a Samsung PL210 digital camera by cable to an EPSON XP 7100 printer. I have simulated that a photo of an object is taken by the digital camera. The LCD display of the camera is damaged, which becomes clear by the cracks in the display. Firstly, a flash fires visualizing the photo shooting process. In the end, the photo is printed by the printer. When taking a closer look at the printed photo, one can see the cracks in the display were also printed on the photo.</p>
+            </article>
+
+          <article class='column'>
+            <video class='article-image' width="320" height="240" controls>
+              <source src="videos/campaign.mp4" type="video/mp4">
+            </video>
+            <h1>Project Make</h1>
+            <p>In this project, we created a concept for a social media campaign about the German care sector. The aim is to generate enthusiasm and to raise awareness for the day to day and structural problems that nurses deal with. We have drawn upon the means of a social media campaign in order to reach the broad masses as well as our target groups Gen Z and millennials.
+          </article>
+              
+          <article class='column'>
+            <h1>AI for Hand-written Digit Recognition</h1>
+            <p><a href="https://students.pages.coco.study/ss22/aai/team-1/digit_recognition/">Here</a> you find a simple digit recognition program built using TensorFlow.js and P5.js. It allows users to draw a digit from 0 to 9 or letter from latin alphabet on a canvas using their mouse. The program then uses a neural network model, specifically a single-layer perceptron to recognize the drawn digit and display the predicted number. The perceptron is a fundamental type of neural network known for its simplicity and early contributions to the field of machine learning. 
+              The neural network model is trained on the MNIST dataset, a large collection of hand-drawn digits. The MNIST dataset consists of 28x28 pixel images, each representing a single digit from 0 to 9. By training the neural network on this dataset, it learns to recognize patterns and features that distinguish each digit. For letters program have no data set, but users can train the model themselves by clicking on the corresponding buttons for each digit.  
+              Also we see a weight module in interface. It displays the weights associated with each digit as a 28x28 grid of squares on a canvas. The shade of each square corresponds to the magnitude of the weight, where lighter shades represent higher weights and darker shades represent lower weights. This dynamic visualization allows users to observe how the model learns to recognize different patterns for each digit during the training process.</p>
+          </article>
+
+
+          
         </div>
-      </div>
-  
-        <div class='project-grid-container two'>
-          <div class='project-grid'>
-  
-  
-            <div class='project-grid-item'>
-              <article>
-                <h1>AI for Hand-written Digit Recognition</h1>
-                <p><a href="https://students.pages.coco.study/ss22/aai/team-1/digit_recognition/">Here</a> you find a simple digit recognition program built using TensorFlow.js and P5.js. It allows users to draw a digit from 0 to 9 or letter from latin alphabet on a canvas using their mouse. The program then uses a neural network model, specifically a single-layer perceptron to recognize the drawn digit and display the predicted number. The perceptron is a fundamental type of neural network known for its simplicity and early contributions to the field of machine learning. 
-                  The neural network model is trained on the MNIST dataset, a large collection of hand-drawn digits. The MNIST dataset consists of 28x28 pixel images, each representing a single digit from 0 to 9. By training the neural network on this dataset, it learns to recognize patterns and features that distinguish each digit. For letters program have no data set, but users can train the model themselves by clicking on the corresponding buttons for each digit.  
-                  Also we see a weight module in interface. It displays the weights associated with each digit as a 28x28 grid of squares on a canvas. The shade of each square corresponds to the magnitude of the weight, where lighter shades represent higher weights and darker shades represent lower weights. This dynamic visualization allows users to observe how the model learns to recognize different patterns for each digit during the training process.</p>
-              </article>
-            </div>
-  
-  
-            <div class='project-grid-item last-item'>
-              <article>
-                <h1>Project Make</h1>
-                <p>In this project, we created a concept for a social media campaign about the German care sector. The aim is to generate enthusiasm and to raise awareness for the day to day and structural problems that nurses deal with. We have drawn upon the means of a social media campaign in order to reach the broad masses as well as our target groups Gen Z and millennials.
-                  <!-- <object data="images/Social-Media-Strategie.pdf" width="500" height="200"></object> --> 
-                  <video width="320" height="240" controls>
-                    <source src="videos/campaign.mp4" type="video/mp4">
-                  </video>
-              </article>
-            </div>
-          </div>
-        </div>
-        </div></div>
-
-      <footer class='footer-container'>
-        <nav class='footer'>
-
-          <div class='footer-item footer-one'><img src='images/phone.png'/></div>
-          <div class='footer-item footer-two'><p>015781719934</p></div>
-          <div class='footer-item footer-three'><address><a href='mailto:emsalmengus@gmail.com'>emsalmengus@gmail.com</a></address></div>
-
-        </nav>
-      </footer>
+      </section>
     </body>
 </html>

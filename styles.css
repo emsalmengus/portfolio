@@ -8,80 +8,83 @@
   }
 
   .menu-container {
-    position: fixed;
-    top: 0;
-    left: 0;
     background-color: #ffffff;
     padding: 20px 0;
     display: flex;
-    justify-content: space-around;
-    width: fit-content;
-    height: 50px;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: flex-start;
   }
   
   .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    font-size: small;
   }
 
   .home-container, 
-  .project-grid-container,
   .about-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    width: 900px;
+    margin: 0 auto;
 
   }
   
-  .home, .project-grid, .about {
+  .home, .about {
     display: flex;
     justify-content: center;
     background-color: #ffffff;
-    width: 800px;
-    margin: 40px 0;
   }
 
   .about, .home {
     font-size: larger;
   }
   
+  .project-grid-container {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  .project-grid {
+    overflow: hidden;
+    background-color: #EAEDF0;
+  }
   .home-item,
-  .project-grid-item,
   .about-item {
     margin:auto;
     padding-top: 2%;
     flex:1.5
-  } 
+  }
+  .project-grid-item {
 
-  .home-footer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
   }
 
-  .footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  background-color: #ffffff;
-  
+  .column {
+    float: left;
+    width: 37%;
+    margin: 20px 1.15%;
+    height: 420px;
+    background-color: #B2D6FF;    /* Medium blue */
+    padding:20px;
+  }
 
+
+  .article-image {
+  float: left;
+  width: 300px;
+  height: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
-.footer-item {
-  justify-content: space-around;
-
-  border: 1px solid #000000;
+  .launch {
+    width: 250px;
+    height: 500px;
 }
 
-.footer-one {
-  justify-self:flex-start;
+p {
+  margin-bottom: 20px;
 }
 
-.footer-three {
-  justify-self:flex-end;
 
-}
 
 
